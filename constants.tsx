@@ -92,23 +92,55 @@ export const CONTENT = {
     phone: "720-248-4770",
     phoneHref: "tel:7202484770",
     address: "7200 E. Hampden Ave. Suite 206, Denver, CO 80224",
+    serviceAreas: [
+      "Washington Virginia Vale",
+      "Hilltop",
+      "Englewood",
+      "Virginia Village"
+    ],
     disclaimer: "The information provided on this website is for educational purposes only and is not intended to diagnose, treat, or cure any disease. Always consult with your physician before beginning any new treatment or diet"
   },
+  location: {
+    headline: "Visit Colorado Functional Health",
+    body: "Our Denver clinic is easy to reach and designed to feel calm, welcoming, and focused on you. Schedule a visit to explore a functional medicine approach to thyroid health that considers your full story.",
+    mapEmbedUrl: "https://www.google.com/maps?q=Colorado+Functional+Health+Denver+Functional+Medicine+Doctor+7200+E+Hampden+Ave+Denver+CO+80224&output=embed",
+    mapLink: "https://www.google.com/maps/place/Colorado+Functional+Health+-+Denver+Functional+Medicine+Doctor",
+    quickFacts: [
+      "Convenient to Washington Virginia Vale and Virginia Village.",
+      "Short drive for clients from Englewood and Hilltop.",
+      "Located in the Poplar Professional Building."
+    ]
+  },
+  insights: [
+    {
+      title: "A Personalized, Functional Medicine Approach",
+      body: "We take time to understand what might be disrupting thyroid function, including gut health, stress load, and nutrient balance. Your plan is tailored, not templated."
+    },
+    {
+      title: "Looking Beneath the Surface",
+      body: "In-depth testing and lifestyle evaluation help us connect the dots behind persistent symptoms. The goal is clarity, not guesswork."
+    },
+    {
+      title: "A Calm Space for Lasting Change",
+      body: "Our Denver clinic offers a welcoming environment for thoughtful, long-term support. We listen carefully and build realistic strategies you can follow."
+    }
+  ],
+  testimonials: [] as { name: string; quote: string }[],
   home: {
-    headline: "Suffering from Low Thyroid Symptoms in Denver? You Are Not Alone.",
-    subheadline: "Why your labs are \"normal,\" but you still don’t feel well.",
-    body: "If you are struggling with weight gain, fatigue, brain fog, or hair loss, you may have been told by other doctors that your thyroid is \"normal\" based on a simple TSH test. Yet, you continue to suffer.\n\nAt Denver Thyroid Support, Dr. David Arthur takes a different approach. We understand that \"normal\" is not the same as optimal. We utilize a comprehensive Neuroendocrine-Immune (NEI) approach to uncover the root causes of your condition that standard medicine often overlooks.",
-    listTitle: "Does this sound like you?",
+    headline: "Feeling off but told your thyroid is “normal”?",
+    subheadline: "Colorado Functional Health helps you uncover what’s beneath the surface.",
+    body: "Your thyroid affects everything from your energy to your sleep and mood. At Colorado Functional Health in Denver, we take a deeper look at the factors that may be influencing your thyroid health—gut imbalances, stress load, hormone shifts, and nutrient needs.\n\nOur functional wellness tools are designed to help you move forward with clarity, not confusion. When you better understand your thyroid, you can take meaningful steps toward lasting change. We’re conveniently located near Washington Virginia Vale and welcome patients across the Denver metro area.",
+    listTitle: "Common reasons people reach out",
     listItems: [
-      "You are taking thyroid medication but still feel tired and foggy.",
-      "You cannot lose weight despite diet and exercise.",
-      "You have been told your symptoms are \"just stress\" or \"part of aging.\""
+      "Fatigue, temperature sensitivity, or mood swings that don’t add up.",
+      "Difficulty losing weight even with consistent lifestyle changes.",
+      "“Normal” labs that don’t reflect how you feel day to day."
     ],
-    solution: "Dr. Arthur specializes in Functional Blood Chemistry Analysis (FBCA). Unlike the standard medical model that waits for a disease to progress before treating it, we look for functional imbalances in the Neuroendocrine-Immune Axis—the connection between your brain, hormones, and immune system."
+    solution: "We blend in-depth lab testing with a whole-body evaluation so your plan fits your biology, lifestyle, and long-term goals."
   },
   symptoms: {
-    headline: "Do You Recognize These Symptoms?",
-    body: "Many of our patients in the Denver Metro area present with a specific pattern of symptoms that have gone unresolved by traditional care. These are the warning signs of a functional thyroid or metabolic imbalance:",
+    headline: "Do You Recognize These Thyroid-Related Symptoms?",
+    body: "Clients from Hilltop, Englewood, and surrounding Denver neighborhoods often share a pattern of symptoms that traditional care hasn’t resolved. These signs may point to thyroid or metabolic imbalance:",
     list: [
       { title: "Weight Issues", desc: "Inability to lose weight or unexplained weight gain." },
       { title: "Energy Levels", desc: "Chronic fatigue, exhaustion, and lethargy (especially in the afternoon)." },
@@ -118,49 +150,49 @@ export const CONTENT = {
       { title: "Temperature", desc: "Cold hands and feet, or intolerance to cold." },
       { title: "Sleep", desc: "Insomnia or waking up tired." }
     ],
-    note: "Why these symptoms persist: Research shows that up to 15% of hypothyroid patients treated with standard hormone replacement (levothyroxine) continue to suffer from these symptoms despite having normal TSH levels. This is often because the underlying autoimmune (Hashimoto’s), inflammatory, or gut-health triggers have not been addressed."
+    note: "Why these symptoms persist: Standard thyroid care may stop at TSH. We look at digestion, hormones, inflammation, and lifestyle factors that can keep symptoms active even when labs appear “normal.”"
   },
   answers: {
-    headline: "Why Your Lab Tests Look \"Normal\" When You Feel Sick.",
-    section1Title: "The Problem with the \"Standard\" Range",
-    section1Body: "Most doctors use \"pathological ranges\" to read your blood work. These ranges are averages based on the sick population visiting labs. You can be one point away from a disease diagnosis and still be considered \"normal,\" even though your function has declined significantly.",
-    section2Title: "The Functional Approach: Normal vs. Optimal",
-    section2Body: "Dr. Arthur uses Functional Blood Chemistry Analysis (FBCA). We use tighter, \"functional\" ranges that define optimal health, not just the absence of disease. This allows us to detect problems like blood sugar dysregulation, inflammation, and nutrient deficiencies before they become irreversible.",
-    section3Title: "The TSH Trap",
-    section3Body: "Standard care often relies solely on TSH (Thyroid Stimulating Hormone). However, thyroid physiology is complex. We look deeper at:",
+    headline: "Answers Come From Looking Deeper.",
+    section1Title: "A Functional Medicine Perspective",
+    section1Body: "Functional medicine asks why symptoms are happening, not just what they are. That means looking at nutrition, stress, gut health, and lifestyle patterns that can influence thyroid function.",
+    section2Title: "In-Depth Testing + Lifestyle Insight",
+    section2Body: "We use in-depth lab testing and lifestyle evaluation to build a clear picture of what is happening beneath the surface. This approach helps turn confusing symptoms into a practical plan forward.",
+    section3Title: "Beyond the TSH Screen",
+    section3Body: "Thyroid physiology is complex. We explore multiple data points and patterns, including:",
     list: [
-      { title: "Thyroid Antibodies (TPO & TgAb)", desc: "To detect Hashimoto’s Autoimmunity, which is the leading cause of hypothyroidism." },
-      { title: "Conversion Issues", desc: "Can your body convert T4 (inactive) to T3 (active)? Inflammation and gut issues can block this process." },
-      { title: "Reverse T3", desc: "High stress or trauma can cause your body to produce \"Reverse T3,\" which blocks your thyroid receptors, causing hypothyroid symptoms even if T4 levels look normal." }
+      { title: "Thyroid antibodies & immune signals", desc: "To understand if autoimmunity or inflammation is contributing." },
+      { title: "Conversion patterns", desc: "How efficiently your body converts thyroid hormones into active forms." },
+      { title: "Whole-body drivers", desc: "Stress load, gut health, nutrient status, and blood sugar regulation." }
     ]
   },
   methodology: {
-    headline: "The Denver Thyroid Support Methodology.",
-    subheadline: "We do not guess; we test. Dr. Arthur’s protocol is comprehensive and individualized, moving beyond the \"pill for every ill\" model.",
+    headline: "Our Whole-Body Thyroid Approach.",
+    subheadline: "We combine modern lab testing with functional wellness strategies to uncover contributors and build realistic, effective plans.",
     steps: [
       {
         title: "1. Comprehensive Investigation",
-        body: "We run a broad panel of over 85 biomarkers, checking not just the thyroid, but the systems that support it:",
+        body: "We run a broad panel of biomarkers to look at the thyroid and the systems that influence it:",
         items: [
-          "Complete Thyroid Panel: TSH, Free T3, Free T4, Reverse T3, TPO & Tg Antibodies.",
-          "Inflammatory Markers: hs-CRP, Homocysteine, and Fibrinogen to detect systemic inflammation.",
-          "Gut Health: Testing for \"Leaky Gut,\" infections (H. Pylori), and microbiome balance.",
-          "Nutrient Status: Vitamin D, B12, Iron, Ferritin, and Selenium levels."
+          "Complete thyroid markers and functional ranges.",
+          "Inflammatory and immune signals.",
+          "Gut health patterns and microbiome balance.",
+          "Nutrient status that supports thyroid resilience."
         ]
       },
       {
         title: "2. The Neuroendocrine-Immune (NEI) Framework",
-        body: "Your thyroid does not work in isolation. We treat the NEI Axis, ensuring that your brain (neurology), hormones (endocrine), and immune system are communicating correctly. This includes addressing adrenal function and blood sugar regulation (insulin resistance), which are often the hidden drivers of thyroid dysfunction."
+        body: "Your thyroid does not work in isolation. We consider the neuroendocrine-immune axis—how your brain, hormones, and immune system communicate—and how stress or blood sugar patterns may affect thyroid function."
       },
       {
         title: "3. Targeted Nutritional Therapy",
-        body: "We utilize evidence-based dietary protocols (such as the Autoimmune Protocol or Paleo) to reduce inflammation and support the immune system. We also use targeted supplementation to correct deficiencies in Zinc, Selenium, and Vitamin D that are essential for thyroid health."
+        body: "We create a sustainable plan that aligns nutrition, lifestyle, and targeted support with your body’s unique needs."
       }
     ]
   },
   about: {
     name: "Dr. David Glenn Arthur, DC, DACNB, FACFN, CCCN",
-    bio: "Dr. David Arthur is the clinic director at Colorado Functional Health and a leading expert in the functional management of thyroid and autoimmune disorders. He is dedicated to helping patients who fall through the cracks of the standard healthcare system.",
+    bio: "Dr. David Arthur is the clinic director at Colorado Functional Health and a trusted guide for patients seeking a deeper understanding of thyroid health. He focuses on root-cause insights, realistic strategies, and clear communication that help patients feel empowered in their next steps.",
     credentials: [
       "Doctor of Chiropractic (DC): Parker College of Chiropractic.",
       "Board Certified in Integrative Medicine (BCIM).",
@@ -168,6 +200,6 @@ export const CONTENT = {
       "Fellow, American College of Functional Neurology (FACFN).",
       "Diplomate, College of Clinical Nutrition (DCCN): Expert in nutritional biochemistry and metabolic support."
     ],
-    closing: "Dr. Arthur serves the Denver Metro area and consults with patients across the United States. His focus is on Functional Blood Chemistry Analysis, Immunology, and the management of Autoimmune Disorders like Hashimoto’s."
+    closing: "Clients from Englewood, Virginia Village, Hilltop, and across the Denver metro area often find the short drive to Colorado Functional Health well worth the clarity and direction they gain."
   }
 };

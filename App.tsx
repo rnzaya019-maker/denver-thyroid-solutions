@@ -4,6 +4,7 @@ import { HeroSection } from './components/HeroSection';
 import { SymptomsSection } from './components/SymptomsSection';
 import { AnswersSection } from './components/AnswersSection';
 import { MethodologySection } from './components/MethodologySection';
+import { InsightsSection } from './components/InsightsSection';
 import { AboutSection } from './components/AboutSection';
 import { ContactSection } from './components/ContactSection';
 
@@ -16,6 +17,7 @@ function App() {
         <SymptomsSection />
         <AnswersSection />
         <MethodologySection />
+        <InsightsSection />
         <AboutSection />
         <ContactSection />
       </main>

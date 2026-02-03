@@ -1,10 +1,9 @@
 import React from 'react';
-import { CONTENT, SCENE_PROMPTS } from '../constants';
-import { Illustration } from './Illustration';
+import { CONTENT } from '../constants';
+import clarityCompletion from '../assets/illustration-clarity-completion.png';
 
 export const AnswersSection: React.FC = () => {
   const { answers } = CONTENT;
-  const prompt = SCENE_PROMPTS.find(p => p.id === 'reevaluation')?.prompt || "Looking deeper";
 
   return (
     <section id="answers" className="py-20 bg-brand-cream">
@@ -15,11 +14,10 @@ export const AnswersSection: React.FC = () => {
 
         <div className="grid lg:grid-cols-2 gap-16 items-start">
             <div className="order-2 lg:order-1 relative">
-                 <Illustration 
-                    prompt={prompt} 
-                    alt="Deep investigation illustration" 
-                    className="w-full aspect-[4/3] rounded-4xl shadow-soft mb-8"
-                    fallbackColor="#264653"
+                 <img
+                    src={clarityCompletion}
+                    alt="Clarity and completion: understanding your thyroid and finding a clear plan forward"
+                    className="w-full aspect-[4/3] object-contain rounded-4xl shadow-soft mb-8"
                  />
                  
                  {/* Decorative comparison card */}

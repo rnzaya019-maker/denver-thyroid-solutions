@@ -1,5 +1,6 @@
 import React from 'react';
 import { CONTENT } from '../constants';
+import drArthur from '../assets/dr-david-arthur.png';
 
 export const AboutSection: React.FC = () => {
   const { about } = CONTENT;
@@ -10,15 +11,14 @@ export const AboutSection: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-12 items-center">
             
             <div className="lg:w-1/3">
-                {/* Placeholder for Doctor Image - using a stylistic frame */}
                 <div className="relative">
                     <div className="absolute inset-0 bg-brand-yellow rounded-4xl transform translate-x-4 translate-y-4"></div>
-                    <div className="bg-brand-dark h-96 w-full rounded-4xl relative overflow-hidden flex items-center justify-center text-white text-center p-8">
-                         {/* In a real app, this would be Dr. Arthur's photo */}
-                         <div>
-                            <span className="block text-6xl mb-4">👨‍⚕️</span>
-                            <span className="font-display font-bold text-xl">Dr. David Arthur</span>
-                         </div>
+                    <div className="bg-brand-dark h-96 w-full rounded-4xl relative overflow-hidden">
+                        <img 
+                          src={drArthur} 
+                          alt="Dr. David Arthur in consultation" 
+                          className="h-full w-full object-cover"
+                        />
                     </div>
                 </div>
             </div>

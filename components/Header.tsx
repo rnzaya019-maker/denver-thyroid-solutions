@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import { CONTENT } from '../constants';
+import logo from '../assets/logo-favicon.png';
 
 export const Header: React.FC = () => {
   const [scrolled, setScrolled] = useState(false);
@@ -26,8 +27,14 @@ export const Header: React.FC = () => {
       }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
-        <a href="#home" className="text-2xl font-display font-bold text-brand-dark tracking-tight">
-          Denver<span className="text-brand-teal">Thyroid</span>
+        <a href="#home" className="flex items-center gap-3">
+          <span className="flex h-12 w-12 flex-shrink-0 overflow-hidden rounded-full bg-white shadow-sm">
+            <img src={logo} alt="Colorado Functional Health" className="h-full w-full object-cover" />
+          </span>
+          <div className="leading-tight">
+            <span className="block text-sm uppercase tracking-widest text-brand-teal font-bold">Colorado Functional Health</span>
+            <span className="block text-xl font-display font-bold text-brand-dark">Denver Thyroid Solutions</span>
+          </div>
         </a>
 
         <nav className="hidden md:flex space-x-8">
@@ -48,6 +55,16 @@ export const Header: React.FC = () => {
         >
           Call {CONTENT.contact.phone}
         </a>
+      </div>
+
+      <div className="md:hidden mt-4 px-6">
+        <div className="flex gap-4 overflow-x-auto pb-2 text-sm font-semibold text-brand-dark">
+          {navLinks.map((link) => (
+            <a key={link.label} href={link.href} className="whitespace-nowrap hover:text-brand-terracotta transition-colors">
+              {link.label}
+            </a>
+          ))}
+        </div>
       </div>
     </header>
   );

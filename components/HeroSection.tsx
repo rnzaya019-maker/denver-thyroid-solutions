@@ -1,11 +1,10 @@
 import React from 'react';
-import { CONTENT, SCENE_PROMPTS } from '../constants';
-import { Illustration } from './Illustration';
+import { CONTENT } from '../constants';
+import logo from '../assets/logo-favicon.png';
+import heroIllustration from '../assets/illustration-feeling-unwell-labs-normal.png';
 
 export const HeroSection: React.FC = () => {
   const { home } = CONTENT;
-  // Use the "symptoms-metaphor" prompt for the hero visualization
-  const heroPrompt = SCENE_PROMPTS.find(p => p.id === 'symptoms-metaphor')?.prompt || "Abstract thyroid health";
 
   return (
     <section id="home" className="min-h-screen pt-24 pb-12 flex items-center relative overflow-hidden bg-brand-cream">
@@ -46,6 +45,16 @@ export const HeroSection: React.FC = () => {
               </a>
             </div>
 
+            <div className="flex items-center gap-4 bg-white/80 border border-brand-lavender/40 rounded-3xl p-4">
+              <span className="flex h-24 w-24 flex-shrink-0 overflow-hidden rounded-full bg-white shadow-sm">
+                <img src={logo} alt="Colorado Functional Health" className="h-full w-full object-cover" />
+              </span>
+              <div>
+                <p className="text-sm font-bold text-brand-dark">Colorado Functional Health, Denver</p>
+                <p className="text-xs text-gray-500">Serving Washington Virginia Vale, Hilltop, Englewood, and Virginia Village</p>
+              </div>
+            </div>
+
             {/* List */}
             <div className="mt-8 bg-white p-6 rounded-3xl shadow-sm border border-brand-lavender/50">
               <h3 className="font-bold text-brand-dark mb-4">{home.listTitle}</h3>
@@ -62,13 +71,12 @@ export const HeroSection: React.FC = () => {
             </div>
           </div>
 
-          {/* Illustration */}
+          {/* Illustration: feeling unwell, labs "normal" */}
           <div className="relative">
-             <Illustration 
-                prompt={heroPrompt} 
-                alt="Abstract illustration of thyroid symptoms" 
-                className="w-full aspect-square md:aspect-[4/5] lg:aspect-square"
-                fallbackColor="#2A9D8F"
+             <img
+                src={heroIllustration}
+                alt="Feeling unwell but labs are normal? We look at stress, gut health, and lifestyle."
+                className="w-full aspect-square md:aspect-[4/5] lg:aspect-square object-contain rounded-3xl shadow-soft"
              />
              <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-lg max-w-xs hidden md:block">
                <p className="text-sm text-brand-dark italic border-l-4 border-brand-yellow pl-3">

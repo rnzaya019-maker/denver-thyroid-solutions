@@ -1,21 +1,30 @@
 import React from 'react';
-import { CONTENT, SCENE_PROMPTS } from '../constants';
-import { Illustration } from './Illustration';
+import { CONTENT } from '../constants';
+import whyPeopleReachOut from '../assets/illustration-why-people-reach-out.png';
+import gutImbalance from '../assets/illustration-gut-imbalance.png';
 
 export const SymptomsSection: React.FC = () => {
   const { symptoms } = CONTENT;
-  const prompt = SCENE_PROMPTS.find(p => p.id === 'weight-loss')?.prompt || "Struggle";
 
   return (
     <section id="symptoms" className="py-20 bg-white">
       <div className="container mx-auto px-6">
-        <div className="text-center max-w-3xl mx-auto mb-16">
+        <div className="text-center max-w-3xl mx-auto mb-12">
           <h2 className="text-3xl md:text-4xl font-display font-bold text-brand-dark mb-6">
             {symptoms.headline}
           </h2>
           <p className="text-lg text-gray-600">
             {symptoms.body}
           </p>
+        </div>
+
+        {/* Why people reach out - fatigue, weight struggle, normal labs unwell */}
+        <div className="mb-16 max-w-3xl mx-auto">
+          <img
+            src={whyPeopleReachOut}
+            alt="Why people reach out: fatigue, mood swings, weight struggle, normal labs but feeling unwell"
+            className="w-full h-auto object-contain rounded-3xl shadow-soft"
+          />
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
@@ -40,12 +49,11 @@ export const SymptomsSection: React.FC = () => {
               </p>
             </div>
             <div className="hidden md:block">
-                <Illustration 
-                    prompt={prompt} 
-                    alt="Weight loss resistance illustration" 
-                    className="w-full h-48 rounded-2xl"
-                    fallbackColor="#E76F51"
-                />
+              <img
+                src={gutImbalance}
+                alt="Gut imbalance: good vs bad bacteria and how it affects how you feel"
+                className="w-full h-48 object-contain rounded-2xl max-w-xs"
+              />
             </div>
           </div>
         </div>
